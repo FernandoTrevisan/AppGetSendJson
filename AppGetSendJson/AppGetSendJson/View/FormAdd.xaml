@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGetSendJson.View.FormAdd"
+             Title="Cadastro de Pessoa">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ActivityIndicator x:Name="act_carregando" IsVisible="False" IsRunning="False" />
+
+            <Frame Margin="10" Padding="10">
+                <StackLayout>
+                    <Label Text="Nome: " />
+                    <Entry x:Name="txt_nome" />
+                    <Label Text="Data Nascimento: " />
+                    <DatePicker x:Name="dtpck_data_nasc" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
